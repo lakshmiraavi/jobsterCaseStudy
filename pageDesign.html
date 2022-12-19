@@ -17,7 +17,7 @@
   <script src="https://kit.fontawesome.com/d30c33c832.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/flaticon/flaticon.css" />
   <link rel="stylesheet" href="design.css">
-  <script src="/path/to/cdn/jquery.slim.min.js"></script>
+
 
 
 
@@ -96,6 +96,8 @@
     background-color: rgb(0, 200, 125);
   }
 
+
+
   p,
   li,
   span,
@@ -123,9 +125,6 @@
   .fa-apple,
   .fa-google-play {
     font-size: 50px;
-  }
-  .ftcr{
-    margin-top: -100px;
   }
 </style>
 
@@ -202,17 +201,17 @@
   <section class="banner-bg-video ">
 
     <div class="container-fluid">
-      <video autoplay muted loop id="myVideo" width="1400" height="800">
+      <video autoplay muted loop id="myVideo" height="800">
         <source src="Business.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
       <div class="jobform ">
         <h4>Stable work is out there.We will support you get it!</h4>
-        <p>Search over 20,1544 jobs today!</p>
+        <p class="text-white">Search over 20,1544 jobs today!</p>
         <form action="#">
           <div class="mb-3">
             <div class="d-flex">
-              <label for="jobrole">What</label>
+              <label for="jobrole" class="text-white">What</label>
               <span class="ms-auto text-white">e.g. Job, Company, Title</span>
             </div>
             <div class="position-relative left-icon">
@@ -608,138 +607,96 @@
     </div>
 
   </section>
-  <section class="space-pb pt-4 pt-md-5 our-clients">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="owl-carousel owl-nav-center mb-0 mb-sm-5 pb-sm-5 pb-0" data-animateOut="fadeOut"
-            data-nav-dots="false" data-items="6" data-md-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2"
-            data-space="50">
+  <div class="container" id="featureContainer">
+    <div class="row  justify-content-center">
+      <div id="feature" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Title OPTIONAL -->
 
-            <div class="item">
-              <div class="col-md-2">
-                <img class="img-fluid" src="amz.svg" alt="">
-              </div>
-            </div>
-            <div class="item">
-              <div class="col-md-2">
-
-                <img class="img-fluid" src="fp.svg" alt="">
-              </div>
-            </div>
-            <div class="item">
-              <div class="col-md-2">
-
-                <img class="img-fluid" src="gg.svg" alt="">
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="item">
-                <img class="img-fluid" src="pp.svg" alt="">
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="item">
-                <img class="img-fluid" src="sp.svg" alt="">
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="item">
-                <img class="img-fluid" src="h.svg" alt="">
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="item">
-                <img class="img-fluid" src="sl.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-light mt-5">
-    <div class="container">
-      <div class="row align-items-center mb-3">
-        <div class="col-lg-6 text-center ">
-          <img src="mobile-app.png" alt="" class="image-fluid ">
-        </div>
-        <div class="col-lg-6 text-center mb-3">
-          <h3 class="title">Browse Centuries of Jobs</h3>
-          <p class="lead">We are efficiently delivering tons of jobs straight to your pocket</p>
-          <a href="#" role="button" class="btn btn-lg  bs rounded-0 ">
-            <div class="row">
-              <div class="d-flex">
-                <div>
-                  <i class="fa-brands fa-apple"></i>
-                </div>
-                <div>
-                  <p>Download On the <b>App Store</b></p>
-                </div>
-              </div>
-            </div>
+        <!-- Prev & Next Buttons -->
+        <div class="float-end pe-md-4">
+          <a class="indicator" href="#featureCarousel" role="button" data-bs-slide="prev">
+            <span class="fas fa-chevron-left" aria-hidden="true"></span>
+          </a> &nbsp;&nbsp;
+          <a class="w-auto indicator" href="#featureCarousel" role="button" data-bs-slide="next">
+            <span class="fas fa-chevron-right" aria-hidden="true"></span>
           </a>
-          <a href="#" role="button" class="btn btn-lg  bs rounded-0 ">
-            <div class="row">
-              <div class="d-flex">
-                <div>
-                  <i class="fa-brands fa-google-play"></i>
-                </div>
-                <div>
-                  <p>Get it on <br> <b>Google Play</b></p>
+        </div>
+        <!-- Carousel Items -->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-img">
+                  <img src="amz.svg" class="image-fluid">
+
                 </div>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-img">
+                  <img src="fp.svg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-img">
+                  <img src="gg.svg" class="img-fluid">
 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-img">
+                  <img src="pp.svg" class="img-fluid">
 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-2">
+              <div class="p-2">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="pl.svg" class="img-fluid">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-img">
+                  <img src="sl.svg" class="img-fluid">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row align-items-center ">
-        <div class="text-center mt-5">
-          <h3 class="title">Need Any Help?</h3>
-          <p class="mt-5">It really comes down to understading the steps in the process and then executing on those
-            steps.</p>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col-lg-4">
-          <div class="border mt-2 justify-content-center p-5">
-            <h5 class="title">Chat To Us Online</h5>
-            <p>chat to us online if you have any questions</p>
-            <a href="#" class="links">Click here to open chat</a>
+    <section class="bg-light mt-5">
+      <div class="container">
+        <div class="row align-items-center mb-3">
+          <div class="col-lg-6 text-center ">
+            <img src="mobile-app.png" alt="" style="margin-top: -100px;" class="image-fluid ">
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="border mt-2 justify-content-center p-5">
-            <h5 class="title">Call Us</h5>
-            <p>Our support agent wil work with you to meet your lending needs</p>
-            <a href="#" class="title links text-dark">(123) 345-6789</a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="border mt-2 justify-content-center p-5">
-            <h5 class="title">Read Our Latest News</h5>
-            <p>Visit our Blog page and know more about news and career tips</p>
-            <a href="#" class=" links">Read Blog Post</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row sectionbg ">
-        <div class="col-lg-6">
-          <div class=" p-5 justify-content-center text-white">
-            <h4 class="title">Downoad App</h4>
-            <p class="text-white">Download the latest slick new job apps now</p>
-          </div>
-        </div>
-        <div class="col-lg-6  ">
-          <div class="align-items-center p-5">
+          <div class="col-lg-6 text-center mb-3">
+            <h3 class="title">Browse Centuries of Jobs</h3>
+            <p class="lead">We are efficiently delivering tons of jobs straight to your pocket</p>
             <a href="#" role="button" class="btn btn-lg  bs rounded-0 ">
               <div class="row">
                 <div class="d-flex">
@@ -767,10 +724,82 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container " >
+        <div class="row align-items-center ">
+          <div class="text-center mt-5">
+            <h3 class="title">Need Any Help?</h3>
+            <p class="mt-5">It really comes down to understading the steps in the process and then executing on those
+              steps.</p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <div class="border mt-2 justify-content-center p-5">
+              <h5 class="title">Chat To Us Online</h5>
+              <p>chat to us online if you have any questions</p>
+              <a href="#" class="links">Click here to open chat</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="border mt-2 justify-content-center p-5">
+              <h5 class="title">Call Us</h5>
+              <p>Our support agent wil work with you to meet your lending needs</p>
+              <a href="#" class="title links text-dark">(123) 345-6789</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="border mt-2 justify-content-center p-5">
+              <h5 class="title">Read Our Latest News</h5>
+              <p>Visit our Blog page and know more about news and career tips</p>
+              <a href="#" class=" links">Read Blog Post</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row sectionbg">
+          <div class="col-lg-6">
+            <div class=" p-5 justify-content-center text-white">
+              <h4 class="title">Downoad App</h4>
+              <p class="text-white">Download the latest slick new job apps now</p>
+            </div>
+          </div>
+          <div class="col-lg-6  ">
+            <div class="align-items-center p-5">
+              <a href="#" role="button" class="btn btn-lg  bs rounded-0 ">
+                <div class="row">
+                  <div class="d-flex">
+                    <div>
+                      <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div>
+                      <p>Download On the <b>App Store</b></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" role="button" class="btn btn-lg  bs rounded-0 ">
+                <div class="row">
+                  <div class="d-flex">
+                    <div>
+                      <i class="fa-brands fa-google-play"></i>
+                    </div>
+                    <div>
+                      <p>Get it on <br> <b>Google Play</b></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </section>
-  <footer class="bg-light">
-    <div class="container ftcr ">
+  <section class="bg-light">
+    <div class="container">
       <div class="row">
         <div class="col-lg-3 mt-5">
           <h5 class="title mt-3">Contact Us</h5>
@@ -814,11 +843,13 @@
           </div>
         </div>
       </div>
+    
       <div class="row">
         <div class="col-lg-6 mt-3 mb-5">
           <div class="d-flex">
             <div class="mt-3"><img src="logo.svg" alt=""></div>
-            <div class="ps-sm-3 ms-sm-3 mt-3"><span>Create a free account to find thousands of jobs, Employment & career
+            <div class="ps-sm-3 ms-sm-3 mt-3"><span>Create a free account to find thousands of jobs, Employment &
+                career
                 Opportunities around you!</span></div>
           </div>
         </div>
@@ -830,60 +861,44 @@
                 <label>Jobs Posted</label>
               </div>
             </div>
-
-
             <div class="col-lg-4 mt-3">
               <div>
                 <span class="title fw-bold text-dark ">123</span><br>
                 <label>Jobs Filled</label>
               </div>
             </div>
-
-
             <div class="col-lg-4 mt-3">
               <div>
                 <span class="title fw-bold text-dark ">240</span><br>
                 <label>Companies</label>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
-  </footer>
-  <footer class="bg-dark">
-   
+      </div>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 mb-2 mt-3 ps-sm-5">
-            <div class="justify-content-center p-3">
-              <ul class="list-unstyled d-flex mb-0">
-                <li ><a href="#" class="links text-white">Privacy Policy</a></li>&nbsp; 
-                <li class="text-white"><a href="#" class="links text-white">About</a></li>&nbsp;
-                <li class="text-white"><a href="#" class="links text-white">Team</a></li>&nbsp;
-                <li class="text-center"><a href="#" class="links text-white">Contact</a></li>
-              </ul>
-            </div>
+      <div class="row bg-dark">
+        <div class="col-lg-6 mb-2 mt-3 ps-sm-5">
+          <div class="justify-content-center p-3">
+            <ul class="list-unstyled d-flex mb-0">
+              <li><a href="#" class="links text-white">Privacy Policy</a></li>&nbsp;
+              <li class="text-white"><a href="#" class="links text-white">About</a></li>&nbsp;
+              <li class="text-white"><a href="#" class="links text-white">Team</a></li>&nbsp;
+              <li class="text-center"><a href="#" class="links text-white">Contact</a></li>
+            </ul>
           </div>
-          <div class="col-lg-6 mb-2 mt-3 ">
-            <div class="p-3 text-md-end">
-              <p class="text-white">&copy;Copyright 2022 <a href="#" class="links text-success">Jobster </a>All Rights Reserved</p>
-              
-            </div>
-          </div>
-
         </div>
+        <div class="col-lg-6 mb-2 mt-3 ">
+          <div class="p-3 text-md-end">
+            <p class="text-white">&copy;Copyright 2022 <a href="#" class="links text-success">Jobster </a>All Rights
+              Reserved</p>
 
+          </div>
+        </div>
       </div>
    
-  
-  </footer>
-
-
-
-
-
+  </section>
   <script src="script.js"></script>
 
 
