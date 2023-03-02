@@ -17,7 +17,7 @@ $(document).ready(function(){
   $('#featureCarousel').carousel('pause');
 });
 
-let items2 = document.querySelectorAll('#featureContainer .carousel .carousel-item');
+let items2 = document.querySelectorAll('#featureContainer2 .carousel .carousel-item');
 items2.forEach((el) => {
   const minPerSlide2 = 6
   let next2 = el.nextElementSibling
